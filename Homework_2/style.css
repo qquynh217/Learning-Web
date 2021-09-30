@@ -1,0 +1,50 @@
+#header{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 40px ;
+    text-align: center;
+    background-color: lavenderblush;
+    letter-spacing: 3px;
+}
+#My_img{
+    background-color: mistyrose;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#PS{
+    background-color: #eeddf0 ;
+    vertical-align: top;
+    width: 60%;
+    padding-left: 20px;
+}
+#anh{
+    background-image: url(https://i.pinimg.com/564x/23/10/5e/23105e25fc6195acbbb07f9f910f7ea1.jpg);
+    width: 20%;
+}
+h2{
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    text-decoration: underline;
+    padding-top: 1px;
+}
+#listps{
+    font-size: 25px;
+    font-family: 'Kalam',cursive;
+}
+#Oct{
+    border-right: solid 1px;
+}
+#Thanks{
+    font-family: 'Kalam',cursive;
+    font-size: 64px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    background-color: honeydew;
+}
