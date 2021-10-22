@@ -1,0 +1,178 @@
+header{
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 50px;
+    background-color: rgb(59, 56, 56);
+    color:gainsboro;
+}
+#cong_cu a{
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: gainsboro;
+}
+#cong_cu a:hover{
+    color: white;
+    cursor: pointer;
+}
+#nen_tang{
+    display: inline;
+    float: left;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+#than{
+    display: flex;
+}
+#menu{
+    height: 90vh; 
+    width: 20%;
+    display: inline-block;
+    margin-right: 25vh;
+}
+#category{
+    margin-left: 30px;
+    border-collapse: collapse;
+    width: 350px;
+}
+#category tr{
+    height: 60px;
+}
+#category td{
+    padding-left: 10px;
+    color: rgb(0, 89, 255);
+    font-size: 1.5em;
+}
+
+#slideshow{
+    width: 1024px;
+    position: relative;
+    margin-right: 20px;
+}
+.slider{
+    width: 1024px;
+    display: flex;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+.slide{
+    margin-top: 30px;
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%; 
+}
+#button span{
+    color: white;
+    font-size: 60px;
+    opacity: 0.8;
+}
+#btn_prev{
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    z-index: 10;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#btn_next{
+    position: absolute;
+    top: 35%;
+    right: 1%;
+    z-index: 10;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#button a{
+    font-size: 1.5em;
+    
+}
+#button ul{
+    position: absolute;
+    z-index: 10;
+    width: 80px;
+    left: 48%;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 0px;
+    top: 400px;
+}
+#button li{
+    width: 20px;
+    height: 20px;
+    background:white;
+    opacity: 0.8;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#product{
+    border-spacing: 22px;
+    display: block;
+    margin-left: 31vw;
+}
+#product td{
+    border: 2px solid gainsboro;
+}
+.pp{
+    width: 315px;
+    height: 180px;
+    vertical-align: middle;
+    background-color: gainsboro;
+    color: grey;
+    position: relative;
+}
+.pp h1{
+    margin-top: 0px;
+    font-size: 2em;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+}
+h2{
+    color: rgb(0, 89, 255);
+    margin-bottom: 0px;
+}
+h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+    width: 245px; 
+    text-align: justify;
+    margin-top: 10px;
+    color: gray;
+    margin-bottom: 30px;
+}
+.star{
+    width: 315px;
+    height: 40px;
+    background-color: whitesmoke;
+    position: relative;
+}
+.star i{
+    font-size: 10px;
+    cursor: pointer;
+}
+.star div{
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+h2,h3,p{
+    margin-left: 30px;
+}
+#cuoi{
+    height: 20vh;
+    background-color: rgb(59, 56, 56);
+    color: gainsboro;
+    text-align: center;
+    position: relative;
+}
+#cuoi div{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
