@@ -2,7 +2,6 @@ header{
     margin-top: 0px;
     margin-left: 0px;
     height: 50px;
-    width: 100vw;
     background-color: rgb(59, 56, 56);
     color:gainsboro;
 }
@@ -28,12 +27,12 @@ header{
     display: flex;
 }
 #menu{
-    width: 35%;
+    margin-left: 2%;
+    width: 25%;
     display: inline-block;
-    margin-right: 0px;
+    margin-right: 3%;
 }
 #category{
-    margin-left: 30px;
     border-collapse: collapse;
     width: 350px;
 }
@@ -46,12 +45,12 @@ header{
     font-size: 1.5em;
 }
 #slideshow{
-    width: 1024px;
+    width: 69%;
     position: relative;
-    margin-right: 10px;
+    margin-right: 0;
 }
 .slider{
-    width: 1024px;
+    width: 100%;
     display: flex;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
@@ -65,7 +64,7 @@ header{
 }
 #button span{
     color: white;
-    font-size: 60px;
+    font-size: 400%;
     opacity: 0.8;
 }
 #btn_prev{
@@ -106,17 +105,20 @@ header{
     background-color: #717171;
 }
 #space{
-    width: 40%;
+    width: 30%;
 }
 #product{
+    width: 70%;
     border-spacing: 22px;
     display: block;
 }
 #product td{
+    width: 30%;
     border: 2px solid gainsboro;
+    height: fit-content;
 }
 .pp{
-    width: 315px;
+    width: 100%;
     height: 180px;
     vertical-align: middle;
     background-color: gainsboro;
@@ -135,18 +137,18 @@ h2{
     margin-bottom: 0px;
 }
 h3{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 p{
-    width: 245px; 
+    width: 70%; 
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 5%;
     color: gray;
-    margin-bottom: 30px;
+    margin-bottom: 8%;
 }
 .star{
-    width: 315px;
+    width: 100%;
     height: 40px;
     background-color: whitesmoke;
     position: relative;
@@ -161,11 +163,10 @@ p{
     left: 30px;
 }
 h2,h3,p{
-    margin-left: 30px;
+    margin-left: 8%;
 }
 #cuoi{
     height: 20vh;
-    width: 100vw;
     background-color: rgb(59, 56, 56);
     color: gainsboro;
     text-align: center;
