@@ -105,10 +105,12 @@ header{
 .active, .dot:hover{
     background-color: #717171;
 }
+#space{
+    width: 40%;
+}
 #product{
     border-spacing: 22px;
     display: block;
-    margin-left: 31%;
 }
 #product td{
     border: 2px solid gainsboro;
