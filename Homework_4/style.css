@@ -2,6 +2,7 @@ header{
     margin-top: 0px;
     margin-left: 0px;
     height: 50px;
+    width: 100vw;
     background-color: rgb(59, 56, 56);
     color:gainsboro;
 }
@@ -27,10 +28,9 @@ header{
     display: flex;
 }
 #menu{
-    height: 90vh; 
-    width: 20%;
+    width: 35%;
     display: inline-block;
-    margin-right: 25vh;
+    margin-right: 0px;
 }
 #category{
     margin-left: 30px;
@@ -45,16 +45,15 @@ header{
     color: rgb(0, 89, 255);
     font-size: 1.5em;
 }
-
 #slideshow{
     width: 1024px;
     position: relative;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .slider{
     width: 1024px;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
@@ -71,47 +70,45 @@ header{
 }
 #btn_prev{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 1%;
     z-index: 10;
     cursor: pointer;
-    text-transform: uppercase;
+    transition: 0.6s ease;
 }
 #btn_next{
     position: absolute;
-    top: 35%;
+    top: 40%;
     right: 1%;
     z-index: 10;
     cursor: pointer;
     text-transform: uppercase;
 }
-#button a{
-    font-size: 1.5em;
-    
+#btn_prev:hover, #btn_next:hover{
+    background-color: darkgrey;
 }
-#button ul{
+#slidewrap{
     position: absolute;
-    z-index: 10;
-    width: 80px;
-    left: 48%;
-    justify-content: space-between;
-    display: flex;
-    padding-left: 0px;
-    top: 400px;
+    bottom: 5%;
+    left: 50%;
 }
-#button li{
-    width: 20px;
-    height: 20px;
-    background:white;
-    opacity: 0.8;
-    list-style: none;
-    border-radius: 50%;
+.dot{
     cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
 }
 #product{
     border-spacing: 22px;
     display: block;
-    margin-left: 31vw;
+    margin-left: 31%;
 }
 #product td{
     border: 2px solid gainsboro;
@@ -166,6 +163,7 @@ h2,h3,p{
 }
 #cuoi{
     height: 20vh;
+    width: 100vw;
     background-color: rgb(59, 56, 56);
     color: gainsboro;
     text-align: center;
@@ -176,3 +174,20 @@ h2,h3,p{
     top: 40%;
     left: 45%;
 }
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

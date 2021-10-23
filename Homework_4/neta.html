@@ -14,19 +14,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <style>
-
-    </style>
+    <script type="text/javascript" src="effect.js"></script>
 </head>
 
 <body style="margin: auto; font-family: 'Roboto', sans-serif;">
     <header>
         <h4 id="nen_tang">Nền Tảng</h4>
         <nav id="cong_cu">
-            <a href="">Trang chủ</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Dịch vụ</a>
             <a href="">Liên hệ</a>
+            <a href="">Dịch vụ</a>
+            <a href="">Giới thiệu</a>
+            <a href="">Trang chủ</a>
         </nav>
     </header>
     <br>
@@ -47,24 +45,18 @@
         </div>
         <div id="slideshow">
             <div class="slider">
-                <img class="slide" id="slide1" src="cake.jpg" alt="">
-                <img class="slide" id="slide2" src="butters.jpg" alt="">
-                <img class="slide" id="slide3" src="pink.png" alt="">
+                <img class="slide fade" id="slide1" src="cake.jpg" alt="">
+                <img class="slide fade" id="slide2" src="butters.jpg" alt="">
+                <img class="slide fade" id="slide3" src="pizza.jpg" alt="">
             </div>
             <div id="button">
-                <span id="btn_prev"><i class="fas fa-chevron-left"></i></span>
-                <span id="btn_next"><i class="fas fa-chevron-right"></i></span>
-                <ul>
-                    <a href="#slide1">
-                        <li> </li>
-                    </a>
-                    <a href="#slide2">
-                        <li> </li>
-                    </a>
-                    <a href="#slide3">
-                        <li> </li>
-                    </a>
-                </ul>
+                <span id="btn_prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></span>
+                <span id="btn_next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div id="slidewrap">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </div>
@@ -194,6 +186,7 @@
             </td>
         </tr>
     </table>
+    <br>
     <div id="cuoi">
         <div>
             Bản quyền bởi
