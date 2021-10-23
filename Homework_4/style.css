@@ -2,7 +2,6 @@ header{
     margin-top: 0px;
     margin-left: 0px;
     height: 50px;
-    width: 100vw;
     background-color: rgb(59, 56, 56);
     color:gainsboro;
 }
@@ -165,7 +164,6 @@ h2,h3,p{
 }
 #cuoi{
     height: 20vh;
-    width: 100vw;
     background-color: rgb(59, 56, 56);
     color: gainsboro;
     text-align: center;
