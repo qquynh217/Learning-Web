@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center; /*căn lề theo chiều dọc*/
+    justify-content: space-between; /*căn lề theo chiều ngang*/
+}
+.bong{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header h1{
+    margin-left: 30px;
+}
+nav{
+    margin-right: 10px;
+}
+nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+nav a:first-child{
+    color: red;
+}
+.main{
+    display: flex;
+    margin-top: 40px;
+}
+.spacel, .spacer{
+    width: 15%;
+}
+.content{
+    width: 80%;
+    height: fit-content;
+    background-color: #99e1f6;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+    max-width: 335px;
+    border-radius: 5px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#team{
+    width: 30%;
+    padding: 15px;
+    display: inline-block;
+}
+#team h2{
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+@media screen and (max-width: 1480px) { 
+    #team{
+      display: block;
+      width: 100%;
+    }
+    img{
+        max-width: 93%;
+    }
+}
