@@ -4,7 +4,7 @@ body{
     font-family: sans-serif;
 }
 header{
-    height: 100px;
+    height: 80px;
     background-color: white;
     display: flex;
     align-items: center; /*căn lề theo chiều dọc*/
@@ -29,7 +29,7 @@ nav a:first-child{
 }
 .main{
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .spacel, .spacer{
     width: 15%;
