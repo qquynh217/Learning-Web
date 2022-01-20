@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Font main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Quicksand&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <script src="effect.js"></script>
+    <title>Shop</title>
+</head>
+
+<body>
+    <header class="bong">
+        <div id="logo">
+            <i class="fas fa-bars" id="bar" onclick="menu()"></i>
+            <a href=" index.html">
+                <h1> Lèvres</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="shop.html" class="menu thisPage">Colection</a>
+            <a href="about.html" class="menu">About</a>
+            <a href="contact.html" class="menu">Contact</a>
+            <i class=" far fa-heart"></i>
+            <a href="favourite.html" style="margin: 0" id="bag" class="menu">Favourite item</a>
+            <span id="count">(0)</span>
+        </nav>
+    </header>
+    <ul id="dropdown">
+        <li><a href="shop.html" class="thisPage">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div id="head"></div>
+    <div id="collections">
+        <h3>New season, new colors</h3>
+        <h1>SS21 Collection</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="item">
+            <a href="https://romand.co.kr/product/%EB%A1%AC%EC%95%A4-%EA%B8%80%EB%9E%98%EC%8A%A4%ED%8C%85-%EC%9B%8C%ED%84%B0-%ED%8B%B4%ED%8A%B8-%ED%95%9C%EB%B3%B5%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/543/category/74/display/1/"
+                target="blank"><img src="img/item1.jpg" alt=""></a>
+            <div class="content">
+                <div class="cost">
+                    <h2>rom&nd glasting water tint</h2>
+                    <h1>7.50$ </h1>
+                </div>
+                <i class="far fa-heart" id="heart1" onclick="changeIcon(`${id}`)"></i>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/item2.png" alt="">
+            <div class="content">
+                <div class="cost">
+                    <h2>rom&nd zero velvet tint</h2>
+                    <h1>7.50$</h1>
+                </div>
+                <i class="far fa-heart" id="heart2" onclick="changeIcon(`${id}`)"></i>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/item3.png" alt="">
+            <div class="content">
+                <div class="cost">
+                    <h2>rom&nd juicy lasting tint</h2>
+                    <h1>7.50$</h1>
+                </div>
+                <i class="far fa-heart" id="heart3" onclick="changeIcon(`${id}`)"></i>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/item4.jpg" alt="">
+            <div class="content">
+                <div class="cost">
+                    <h2>3CE velvet liptint</h2>
+                    <h1>12.62$</h1>
+                </div>
+                <i class="far fa-heart" id="heart4" onclick="changeIcon(`${id}`)"></i>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/item5.png" alt="">
+            <div class="content">
+                <div class="cost">
+                    <h2>Ofelia glacier velvet tint</h2>
+                    <h1>10.99$</h1>
+                </div>
+                <i class="far fa-heart" id="heart5" onclick="changeIcon(`${id}`)"></i>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/item6.png" alt="">
+            <div class="content">
+                <div class="cost">
+                    <h2>Gilaa long wear lip cream</h2>
+                    <h1>13.00$</h1>
+                </div>
+                <i class="far fa-heart" id="heart6" onclick="changeIcon(`${id}`)"></i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            Design idea by
+            <i class="far fa-copyright"></i>
+            <a href="https://zyro.com/vn/preview/wells?returnPath=%2Fvn%2Ftemplate%2Fe-commerce%2F3#desktop"
+                target="blank">zyro.com</a>
+            <i class="far fa-copyright"></i>
+        </div>
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>

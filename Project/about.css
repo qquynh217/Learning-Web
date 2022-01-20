@@ -1,0 +1,110 @@
+.main3, .main4, .main5{
+    padding: 5% 15% 5%;
+}
+.main1 h1{
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+.main5{
+    padding-top: 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.main3 p{
+    font-size: 1.1rem;
+    width: 70%;
+}
+.main5, .main4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail{
+    width: 60%;
+    font-size: 1.1rem;
+}
+.main4 img{
+    width: 35%;
+}
+.main5 .img-awark{
+    width: 50%;
+}
+.main5 img{
+    width: 100%;
+}
+.img-awark{
+    position: relative;
+}
+.awark{
+    width: 20%;
+    position: absolute;
+    top: -6%;
+    right: -6%;
+}
+.prd-awark{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote{
+    position: relative;
+}
+.quote p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.quote-by{
+    color: #999;
+    text-align: right;
+    font-style: italic;
+}
+.prd-awark h2{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 2rem;
+}
+.q-before{
+    content: open-quote;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 42px;
+}
+.q-after{
+    content: close-quote;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 42px;
+}
+@media screen and (max-width: 920px){
+    .main3 p, .main4 .detail{
+        width: auto;
+    }
+    .main5{
+        display: block;
+    }
+    .img-awark, .prd-awark{
+        width: 100% !important;
+        margin-top: 5%;
+    }
+    .main5 h2{
+        margin-bottom: 0;
+    }
+    .main4{
+        display: block;
+    }
+    .main4 img{
+        display: none;
+    }
+}

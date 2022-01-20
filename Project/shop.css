@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content i{
+    font-size: 2rem;
+    padding-right: 5%;
+    cursor: pointer;
+}
