@@ -1,7 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-seri;
     font-weight: 600;
 }
 header, footer, #collections, .container, .list{
@@ -44,7 +44,7 @@ header h1{
     position: fixed;
     margin: 0;
     padding: 0;
-    top: 97.6px;
+    top: 12%;
     left: 0;
     right: 0;
     width: 100%;

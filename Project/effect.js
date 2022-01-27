@@ -2,12 +2,15 @@
 var a = 1;
 function menu() {
     var menuList = document.querySelector('#dropdown');
+    var bar = document.getElementById('bar');
     if (a == 1) {
         menuList.style.display = "block";
         a = 0;
+        bar.className = 'fas fa-times'
     }
     else {
-        menuList.style.display = "none"
+        menuList.style.display = "none";
+        bar.className = 'fas fa-bars'
         a = 1;
     }
 }
