@@ -8,7 +8,9 @@ const searchItems = $$('.search-item')
 const searchBars = $$('.search-bar')
 const h1Banner = $$('.search h1')
 const date = $$('input[type="date"]')
-
+const images = $$('.multi-carousel-item img')
+const title = $$('.multi-carousel-item a')
+console.log(images)
 const multiSlide = {
     currItem: 0,
     currPos: 0,
@@ -24,7 +26,10 @@ const multiSlide = {
                 if (index >= slideItems.length) index -= slideItems.length
                 const div = document.createElement('div')
                 div.classList.add('multi-carousel-item')
-                div.innerHTML = `<a href="#">${index + 1}</a>`
+                div.innerHTML = `
+                    <img src=${images[index].src}>
+                    <a href="#">${title[index].innerText}</a>
+                `
                 slideMain.append(div)
             }
             _this.currItem += 4
