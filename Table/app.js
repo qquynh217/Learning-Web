@@ -10,6 +10,9 @@ const sortButton = document.querySelector('.sort')
 const sortInput = document.querySelector('#sort')
 
 var students = []
+formElement.addEventListener("submit", function (event) {
+    event.preventDefault()
+});
 function Student(name, math, lec, eng, average) {
     this.name = name
     this.lec = lec
@@ -28,7 +31,8 @@ searchButton.onclick = function () {
     search(student)
 }
 sortButton.onclick = function () {
-    sort(sortInput.value)
+    let mood = Number(sortInput.value)
+    sort(mood)
 }
 function render(students) {
     let row = document.createElement('tr')
@@ -48,8 +52,9 @@ function search(student) {
     if (student) {
         let stds =
             students.filter((value, index) => {
-                let name = value.name.toLowerCase()
-                return name.includes(student)
+                let fullname = value.name.toLowerCase().split(' ')
+                let name = fullname[fullname.length - 1]
+                return name == student
             })
         render(stds)
     }
@@ -67,6 +72,5 @@ function sort(mood) {
             if (std1.average < std2.average) return 1
             else return -1
         })
-    console.log(stds)
     render(stds)
 }
