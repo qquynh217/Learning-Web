@@ -21,7 +21,7 @@ function Student(name, math, lec, eng, average) {
     this.average = average
 }
 formElement.onsubmit = function () {
-    const average = ((Number(mathInput.value) + Number(lectureInput.value) + Number(engInput.value)) / 3).toFixed(1)
+    const average = Number(((Number(mathInput.value) + Number(lectureInput.value) + Number(engInput.value)) / 3).toFixed(1))
     const std = new Student(nameInput.value, mathInput.value, lectureInput.value, engInput.value, average)
     students.push(std)
     render(students)
